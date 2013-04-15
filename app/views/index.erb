@@ -1,0 +1,12 @@
+<%= rand(99999) %>
+ 
+<% if @user %>
+<h1>Howdy, <%= @user.name %></h1>
+
+<ul>
+<% @user.tweets.each do |tweet| %>
+<li><%= tweet.text %></li>
+<% end %>
+</ul>
+
+<% end %>
