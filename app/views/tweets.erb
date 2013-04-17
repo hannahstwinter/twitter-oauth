@@ -3,3 +3,11 @@
 <li><%= tweet.text %></li>
 <% end %>
 </ul>
+
+tweet it!
+<div class ="add_tweet">
+  <form action="/<%= @user.user_name %>/tweet" method="post" name="tweet">
+  <textarea name="tweet" rows="4" cols="30"></textarea>
+  <button type="submit_tweet">submit</button>
+  </form>
+</div>

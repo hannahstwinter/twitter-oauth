@@ -1,12 +1,9 @@
 <%= rand(99999) %>
- 
-<% if @user %>
-<h1>Howdy, <%= @user.name %></h1>
 
-<ul>
-<% @user.tweets.each do |tweet| %>
-<li><%= tweet.text %></li>
-<% end %>
-</ul>
+<h3>Welcome to SimpleTwitter</h3>
+<p>Do you find yourself getting annoyed with Helvetica and bootstrap?</p>
+<p>We hear ya. Interact with Twitter using our interface instead.</p>
+<a href="/oauth">Login to Twitter<a><br>
 
-<% end %>
+<%= ENV["TWITTER_KEY"] %><br>
+<%= ENV["TWITTER_SECRET"] %>
